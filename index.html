@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="custom.css">
+  <script src="jquery/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="weaponlist.js"></script>
+  <script src="weapondata.js"></script>
+  <script src="subs.js"></script>
+  <script src="specials.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div id="main" class="p-0">
+    <button id="btn_menu" class="btn btn-success btn-lg mt-3"><i class="fas fa-arrow-right"></i></button>
+    <div  class="text-center">
+      <div class="row justify-content-center">
+        <div class="text-center">
+          <img id="main_img" src="img/Random.png" alt="Weapon Icon" width="256" height="256"/>
+          <h5 id="main_name">Click to get a random weapon!</h5>
+        </div>
+
+        <div class="text-center pl-3">
+          <div class="d-flex align-items-center flex-column cstm-sub">
+            <img id="sub_img" class="p-2" src="img/Random.png" alt="Sub Icon" width="64" height="64"/>
+            <h6 id="sub_name" class="p-2">&nbsp;</h6>
+          </div>
+          <div class="d-flex align-items-center flex-column cstm-sub">
+            <img id="special_img" class="p-2" src="img/Random.png" alt="Special Icon" width="64" height="64"/>
+            <h6 id="special_name" class="p-2">&nbsp;</h6>
+          </div>
+        </div>
+      </div>
+      <button id="btn_randomise" class="btn btn-success mt-3 btn-lg">Randomise</button>
+
+    </div>
+  </div>
+
+  <div id="side_nav" class="sidenav">
+    <input type="checkbox" id="shooter_class" value="shooter" name="weapon_class" checked=""><label for="shooter_class" class="h5">Shooters</label><br>
+    <input type="checkbox" id="Sploosh-o-matic" value="Sploosh-o-matic" name="shooter" class="chk_main" checked=""><label for="Sploosh-o-matic">Sploosh-o-matic</label><br>
+    <input type="checkbox" id="Neo_Sploosh-o-matic" value="Neo_Sploosh-o-matic" name="shooter" class="chk_main" checked=""><label for="Neo_Sploosh-o-matic">Neo Sploosh-o-matic</label><br>
+    <input type="checkbox" id="Sploosh-o-matic_7" value="Sploosh-o-matic_7" name="shooter" class="chk_main" checked=""><label for="Sploosh-o-matic_7">Sploosh-o-matic 7</label><br>
+    <input type="checkbox" id="Splattershot_Jr" value="Splattershot_Jr" name="shooter" class="chk_main" checked=""><label for="Splattershot_Jr">Splattershot Jr.</label><br>
+    <input type="checkbox" id="Custom_Splattershot_Jr" value="Custom_Splattershot_Jr" name="shooter" class="chk_main" checked=""><label for="Custom_Splattershot_Jr">Custom Splattershot Jr.</label><br>
+    <input type="checkbox" id="Kensa_Splattershot_Jr" value="Kensa_Splattershot_Jr" name="shooter" class="chk_main" checked=""><label for="Kensa_Splattershot_Jr">Kensa Splattershot Jr.</label><br>
+    <input type="checkbox" id="Splash-o-matic" value="Splash-o-matic" name="shooter" class="chk_main" checked=""><label for="Splash-o-matic">Splash-o-matic</label><br>
+    <input type="checkbox" id="Neo_Splash-o-matic" value="Neo_Splash-o-matic" name="shooter" class="chk_main" checked=""><label for="Neo_Splash-o-matic">Neo Splash-o-matic</label><br>
+    <input type="checkbox" id="Aerospray_MG" value="Aerospray_MG" name="shooter" class="chk_main" checked=""><label for="Aerospray_MG">Aerospray MG</label><br>
+    <input type="checkbox" id="Aerospray_RG" value="Aerospray_RG" name="shooter" class="chk_main" checked=""><label for="Aerospray_RG">Aerospray RG</label><br>
+    <input type="checkbox" id="Aerospray_PG" value="Aerospray_PG" name="shooter" class="chk_main" checked=""><label for="Aerospray_PG">Aerospray PG</label><br>
+    <input type="checkbox" id="Splattershot" value="Splattershot" name="shooter" class="chk_main" checked=""><label for="Splattershot">Splattershot</label><br>
+    <input type="checkbox" id="Tentatek_Splattershot" value="Tentatek_Splattershot" name="shooter" class="chk_main" checked=""><label for="Tentatek_Splattershot">Tentatek Splattershot</label><br>
+    <input type="checkbox" id="Kensa_Splattershot" value="Kensa_Splattershot" name="shooter" class="chk_main" checked=""><label for="Kensa_Splattershot">Kensa Splattershot</label><br>
+    <input type="checkbox" id="52_Gal" value="52_Gal" name="shooter" class="chk_main" checked=""><label for="52_Gal">.52 Gal</label><br>
+    <input type="checkbox" id="52_Gal_Deco" value="52_Gal_Deco" name="shooter" class="chk_main" checked=""><label for="52_Gal_Deco">.52 Gal Deco</label><br>
+    <input type="checkbox" id="Kensa_52_Gal" value="Kensa_52_Gal" name="shooter" class="chk_main" checked=""><label for="Kensa_52_Gal">Kensa .52 Gal</label><br>
+    <input type="checkbox" id="N-ZAP_85" value="N-ZAP_85" name="shooter" class="chk_main" checked=""><label for="N-ZAP_85">N-ZAP '85</label><br>
+    <input type="checkbox" id="N-ZAP_89" value="N-ZAP_89" name="shooter" class="chk_main" checked=""><label for="N-ZAP_89">N-ZAP '89</label><br>
+    <input type="checkbox" id="N-ZAP_83" value="N-ZAP_83" name="shooter" class="chk_main" checked=""><label for="N-ZAP_83">N-ZAP '83</label><br>
+    <input type="checkbox" id="Splattershot_Pro" value="Splattershot_Pro" name="shooter" class="chk_main" checked=""><label for="Splattershot_Pro">Splattershot Pro</label><br>
+    <input type="checkbox" id="Forge_Splattershot_Pro" value="Forge_Splattershot_Pro" name="shooter" class="chk_main" checked=""><label for="Forge_Splattershot_Pro">Forge Splattershot Pro</label><br>
+    <input type="checkbox" id="Kensa_Splattershot_Pro" value="Kensa_Splattershot_Pro" name="shooter" class="chk_main" checked=""><label for="Kensa_Splattershot_Pro">Kensa Splattershot Pro</label><br>
+    <input type="checkbox" id="96_Gal" value="96_Gal" name="shooter" class="chk_main" checked=""><label for="96_Gal">.96 Gal</label><br>
+    <input type="checkbox" id="96_Gal_deco" value="96_Gal_deco" name="shooter" class="chk_main" checked=""><label for="96_Gal_deco">.96 Gal Deco</label><br>
+    <input type="checkbox" id="Jet_Squelcher" value="Jet_Squelcher" name="shooter" class="chk_main" checked=""><label for="Jet_Squelcher">Jet Squelcher</label><br>
+    <input type="checkbox" id="Custom_Jet_Squelcher" value="Custom_Jet_Squelcher" name="shooter" class="chk_main" checked=""><label for="Custom_Jet_Squelcher">Custom Jet Squelcher</label><br>
+    <input type="checkbox" id="L-3_Nozzlenose" value="L-3_Nozzlenose" name="shooter" class="chk_main" checked=""><label for="L-3_Nozzlenose">L-3 Nozzlenose</label><br>
+    <input type="checkbox" id="L-3_Nozzlenose_D" value="L-3_Nozzlenose_D" name="shooter" class="chk_main" checked=""><label for="L-3_Nozzlenose_D">L-3 Nozzlenose D</label><br>
+    <input type="checkbox" id="Kensa_L-3_Nozzlenose" value="Kensa_L-3_Nozzlenose" name="shooter" class="chk_main" checked=""><label for="Kensa_L-3_Nozzlenose">Kensa L-3 Nozzlenose</label><br>
+    <input type="checkbox" id="H-3_Nozzlenose" value="H-3_Nozzlenose" name="shooter" class="chk_main" checked=""><label for="H-3_Nozzlenose">H-3 Nozzlenose</label><br>
+    <input type="checkbox" id="H-3_Nozzlenose_D" value="H-3_Nozzlenose_D" name="shooter" class="chk_main" checked=""><label for="H-3_Nozzlenose_D">H-3 Nozzlenose D</label><br>
+    <input type="checkbox" id="Cherry_H-3_Nozzlenose" value="Cherry_H-3_Nozzlenose" name="shooter" class="chk_main" checked=""><label for="Cherry_H-3_Nozzlenose">Cherry H-3 Nozzlenose</label><br>
+    <input type="checkbox" id="Squeezer" value="Squeezer" name="shooter" class="chk_main" checked=""><label for="Squeezer">Squeezer</label><br>
+    <input type="checkbox" id="Foil_Squeezer" value="Foil_Squeezer" name="shooter" class="chk_main" checked=""><label for="Foil_Squeezer">Foil Squeezer</label><br>
+    <hr>
+
+    <input type="checkbox" id="blaster_class" value="blaster" name="weapon_class" checked=""><label for="blaster_class" class="h5">Blasters</label><br>
+    <input type="checkbox" id="Luna_Blaster" value="Luna_Blaster" name="blaster" class="chk_main" checked=""><label for="Luna_Blaster">Luna Blaster</label><br>
+    <input type="checkbox" id="Luna_Blaster_Neo" value="Luna_Blaster_Neo" name="blaster" class="chk_main" checked=""><label for="Luna_Blaster_Neo">Luna Blaster Neo</label><br>
+    <input type="checkbox" id="Kensa_Luna_Blaster" value="Kensa_Luna_Blaster" name="blaster" class="chk_main" checked=""><label for="Kensa_Luna_Blaster">Kensa Luna Blaster</label><br>
+    <input type="checkbox" id="Blaster" value="Blaster" name="blaster" class="chk_main" checked=""><label for="Blaster">Blaster</label><br>
+    <input type="checkbox" id="Custom_Blaster" value="Custom_Blaster" name="blaster" class="chk_main" checked=""><label for="Custom_Blaster">Custom Blaster</label><br>
+    <input type="checkbox" id="Range_Blaster" value="Range_Blaster" name="blaster" class="chk_main" checked=""><label for="Range_Blaster">Range Blaster</label><br>
+    <input type="checkbox" id="Custom_Range_Blaster" value="Custom_Range_Blaster" name="blaster" class="chk_main" checked=""><label for="Custom_Range_Blaster">Custom Range Blaster</label><br>
+    <input type="checkbox" id="Grim_Range_Blaster" value="Grim_Range_Blaster" name="blaster" class="chk_main" checked=""><label for="Grim_Range_Blaster">Grim Range Blaster</label><br>
+    <input type="checkbox" id="Clash_Blaster" value="Clash_Blaster" name="blaster" class="chk_main" checked=""><label for="Clash_Blaster">Clash Blaster</label><br>
+    <input type="checkbox" id="Clash_Blaster_Neo" value="Clash_Blaster_Neo" name="blaster" class="chk_main" checked=""><label for="Clash_Blaster_Neo">Clash Blaster Neo</label><br>
+    <input type="checkbox" id="Rapid_Blaster" value="Rapid_Blaster" name="blaster" class="chk_main" checked=""><label for="Rapid_Blaster">Rapid Blaster</label><br>
+    <input type="checkbox" id="Rapid_Blaster_Deco" value="Rapid_Blaster_Deco" name="blaster" class="chk_main" checked=""><label for="Rapid_Blaster_Deco">Rapid Blaster Deco</label><br>
+    <input type="checkbox" id="Kensa_Rapid_Blaster" value="Kensa_Rapid_Blaster" name="blaster" class="chk_main" checked=""><label for="Kensa_Rapid_Blaster">Kensa Rapid Blaster</label><br>
+    <input type="checkbox" id="Rapid_Blaster_Pro" value="Rapid_Blaster_Pro" name="blaster" class="chk_main" checked=""><label for="Rapid_Blaster_Pro">Rapid Blaster Pro</label><br>
+    <input type="checkbox" id="Rapid_Blaster_Pro_Deco" value="Rapid_Blaster_Pro_Deco" name="blaster" class="chk_main" checked=""><label for="Rapid_Blaster_Pro_Deco">Rapid Blaster Pro Deco</label><br>
+    <hr>
+
+    <input type="checkbox" id="roller_class" value="roller" name="weapon_class" checked=""><label for="roller_class" class="h5">Rollers</label><br>
+    <input type="checkbox" id="Carbon_Roller" value="Carbon_Roller" name="roller" class="chk_main" checked=""><label for="Carbon_Roller">Carbon Roller</label><br>
+    <input type="checkbox" id="Carbon_Roller_Deco" value="Carbon_Roller_Deco" name="roller" class="chk_main" checked=""><label for="Carbon_Roller_Deco">Carbon Roller Deco</label><br>
+    <input type="checkbox" id="Splat_Roller" value="Splat_Roller" name="roller" class="chk_main" checked=""><label for="Splat_Roller">Splat Roller</label><br>
+    <input type="checkbox" id="Krak-On_Splat_Roller" value="Krak-On_Splat_Roller" name="roller" class="chk_main" checked=""><label for="Krak-On_Splat_Roller">Krak-On Splat Roller</label><br>
+    <input type="checkbox" id="Kensa_Splat_Roller" value="Kensa_Splat_Roller" name="roller" class="chk_main" checked=""><label for="Kensa_Splat_Roller">Kensa Splat Roller</label><br>
+    <input type="checkbox" id="Dynamo_Roller" value="Dynamo_Roller" name="roller" class="chk_main" checked=""><label for="Dynamo_Roller">Dynamo Roller</label><br>
+    <input type="checkbox" id="Gold_Dynamo_Roller" value="Gold_Dynamo_Roller" name="roller" class="chk_main" checked=""><label for="Gold_Dynamo_Roller">Gold Dynamo Roller</label><br>
+    <input type="checkbox" id="Kensa_Dynamo_Roller" value="Kensa_Dynamo_Roller" name="roller" class="chk_main" checked=""><label for="Kensa_Dynamo_Roller">Kensa Dynamo Roller</label><br>
+    <input type="checkbox" id="Flingza_Roller" value="Flingza_Roller" name="roller" class="chk_main" checked=""><label for="Flingza_Roller">Flingza Roller</label><br>
+    <input type="checkbox" id="Foil_Flingza_Roller" value="Foil_Flingza_Roller" name="roller" class="chk_main" checked=""><label for="Foil_Flingza_Roller">Foil Flingza Roller</label><br>
+    <hr>
+
+    <input type="checkbox" id="brush_class" value="brush" name="weapon_class" checked=""><label for="brush_class" class="h5">Brushes</label><br>
+    <input type="checkbox" id="Inkbrush" value="Inkbrush" name="brush" class="chk_main" checked=""><label for="Inkbrush">Ink Brush</label><br>
+    <input type="checkbox" id="Inkbrush_Nouveau" value="Inkbrush_Nouveau" name="brush" class="chk_main" checked=""><label for="Inkbrush_Nouveau">Inkbrush Nouveau</label><br>
+    <input type="checkbox" id="Permanent_Inkbrush" value="Permanent_Inkbrush" name="brush" class="chk_main" checked=""><label for="Permanent_Inkbrush">Permanent Inkbrush</label><br>
+    <input type="checkbox" id="Octobrush" value="Octobrush" name="brush" class="chk_main" checked=""><label for="Octobrush">Octobrush</label><br>
+    <input type="checkbox" id="Octobrush_Nouveau" value="Octobrush_Nouveau" name="brush" class="chk_main" checked=""><label for="Octobrush_Nouveau">Octobrush Nouveau</label><br>
+    <input type="checkbox" id="Kensa_Octobrush" value="Kensa_Octobrush" name="brush" class="chk_main" checked=""><label for="Kensa_Octobrush">Kensa Octobrush</label><br>
+    <hr>
+
+    <input type="checkbox" id="charger_class" value="charger" name="weapon_class" checked=""><label for="charger_class" class="h5">Chargers</label><br>
+    <input type="checkbox" id="Classic_Squiffer" value="Classic_Squiffer" name="charger" class="chk_main" checked=""><label for="Classic_Squiffer">Classic Squiffer</label><br>
+    <input type="checkbox" id="New_Squiffer" value="New_Squiffer" name="charger" class="chk_main" checked=""><label for="New_Squiffer">New Squiffer</label><br>
+    <input type="checkbox" id="Fresh_Squiffer" value="Fresh_Squiffer" name="charger" class="chk_main" checked=""><label for="Fresh_Squiffer">Fresh Squiffer</label><br>
+    <input type="checkbox" id="Splat_Charger" value="Splat_Charger" name="charger" class="chk_main" checked=""><label for="Splat_Charger">Splat Charger</label><br>
+    <input type="checkbox" id="Firefin_Splat_Charger" value="Firefin_Splat_Charger" name="charger" class="chk_main" checked=""><label for="Firefin_Splat_Charger">Firefin Splat Charger</label><br>
+    <input type="checkbox" id="Kensa_Charger" value="Kensa_Charger" name="charger" class="chk_main" checked=""><label for="Kensa_Charger">Kensa Charger</label><br>
+    <input type="checkbox" id="Splatterscope" value="Splatterscope" name="charger" class="chk_main" checked=""><label for="Splatterscope">Splatterscope</label><br>
+    <input type="checkbox" id="Firefin_Splatterscope" value="Firefin_Splatterscope" name="charger" class="chk_main" checked=""><label for="Firefin_Splatterscope">Firefin Splatterscope</label><br>
+    <input type="checkbox" id="Kensa_Splatterscope" value="Kensa_Splatterscope" name="charger" class="chk_main" checked=""><label for="Kensa_Splatterscope">Kensa Splatterscope</label><br>
+    <input type="checkbox" id="E-liter_4K" value="E-liter_4K" name="charger" class="chk_main" checked=""><label for="E-liter_4K">E-liter 4K</label><br>
+    <input type="checkbox" id="Custom_E-liter_4K" value="Custom_E-liter_4K" name="charger" class="chk_main" checked=""><label for="Custom_E-liter_4K">Custom E-liter 4K</label><br>
+    <input type="checkbox" id="E-liter_4K_Scope" value="E-liter_4K_Scope" name="charger" class="chk_main" checked=""><label for="E-liter_4K_Scope">E-liter 4K Scope</label><br>
+    <input type="checkbox" id="Custom_E-liter_4K_Scope" value="Custom_E-liter_4K_Scope" name="charger" class="chk_main" checked=""><label for="Custom_E-liter_4K_Scope">Custom E-liter 4K Scope</label><br>
+    <input type="checkbox" id="Bamboozler_14_Mk_I" value="Bamboozler_14_Mk_I" name="charger" class="chk_main" checked=""><label for="Bamboozler_14_Mk_I">Bamboozler 14 Mk I</label><br>
+    <input type="checkbox" id="Bamboozler_14_Mk_II" value="Bamboozler_14_Mk_II" name="charger" class="chk_main" checked=""><label for="Bamboozler_14_Mk_II">Bamboozler 14 Mk II</label><br>
+    <input type="checkbox" id="Bamboozler_14_Mk_III" value="Bamboozler_14_Mk_III" name="charger" class="chk_main" checked=""><label for="Bamboozler_14_Mk_III">Bamboozler 14 Mk III</label><br>
+    <input type="checkbox" id="Goo_Tuber" value="Goo_Tuber" name="charger" class="chk_main" checked=""><label for="Goo_Tuber">Goo Tuber</label><br>
+    <input type="checkbox" id="Custom_Goo_Tuber" value="Custom_Goo_Tuber" name="charger" class="chk_main" checked=""><label for="Custom_Goo_Tuber">Custom Goo Tuber</label><br>
+    <hr>
+
+    <input type="checkbox" id="slosher_class" value="slosher" name="weapon_class" checked=""><label for="slosher_class" class="h5">Sloshers</label><br>
+    <input type="checkbox" id="Slosher" value="Slosher" name="slosher" class="chk_main" checked=""><label for="Slosher">Slosher</label><br>
+    <input type="checkbox" id="Slosher_Deco" value="Slosher_Deco" name="slosher" class="chk_main" checked=""><label for="Slosher_Deco">Slosher Deco</label><br>
+    <input type="checkbox" id="Soda_Slosher" value="Soda_Slosher" name="slosher" class="chk_main" checked=""><label for="Soda_Slosher">Soda Slosher</label><br>
+    <input type="checkbox" id="Tri-slosher" value="Tri-slosher" name="slosher" class="chk_main" checked=""><label for="Tri-slosher">Tri-slosher</label><br>
+    <input type="checkbox" id="Tri-slosher_Nouveau" value="Tri-slosher_Nouveau" name="slosher" class="chk_main" checked=""><label for="Tri-slosher_Nouveau">Tri-Slosher Nouveau</label><br>
+    <input type="checkbox" id="Sloshing_Machine" value="Sloshing_Machine" name="slosher" class="chk_main" checked=""><label for="Sloshing_Machine">Sloshing Machine</label><br>
+    <input type="checkbox" id="Sloshing_Machine_Neo" value="Sloshing_Machine_Neo" name="slosher" class="chk_main" checked=""><label for="Sloshing_Machine_Neo">Sloshing Machine Neo</label><br>
+    <input type="checkbox" id="Kensa_Sloshing_Machine" value="Kensa_Sloshing_Machine" name="slosher" class="chk_main" checked=""><label for="Kensa_Sloshing_Machine">Kensa Sloshing Machine</label><br>
+    <input type="checkbox" id="Bloblobber" value="Bloblobber" name="slosher" class="chk_main" checked=""><label for="Bloblobber">Bloblobber</label><br>
+    <input type="checkbox" id="Bloblobber_Deco" value="Bloblobber_Deco" name="slosher" class="chk_main" checked=""><label for="Bloblobber_Deco">Bloblobber Deco</label><br>
+    <input type="checkbox" id="Explosher" value="Explosher" name="slosher" class="chk_main" checked=""><label for="Explosher">Explosher</label><br>
+    <input type="checkbox" id="Custom_Explosher" value="Custom_Explosher" name="slosher" class="chk_main" checked=""><label for="Custom_Explosher">Custom Explosher</label><br>
+    <hr>
+
+    <input type="checkbox" id="splatling_class" value="splatling" name="weapon_class" checked=""><label for="splatling_class" class="h5">Splatlings</label><br>
+    <input type="checkbox" id="Mini_Splatling" value="Mini_Splatling" name="splatling" class="chk_main" checked=""><label for="Mini_Splatling">Mini Splatling</label><br>
+    <input type="checkbox" id="Zink_Mini_Splatling" value="Zink_Mini_Splatling" name="splatling" class="chk_main" checked=""><label for="Zink_Mini_Splatling">Zink Mini Splatling</label><br>
+    <input type="checkbox" id="Kensa_Mini_Splatling" value="Kensa_Mini_Splatling" name="splatling" class="chk_main" checked=""><label for="Kensa_Mini_Splatling">Kensa Mini Splatling</label><br>
+    <input type="checkbox" id="Heavy_Splatling" value="Heavy_Splatling" name="splatling" class="chk_main" checked=""><label for="Heavy_Splatling">Heavy Splatling</label><br>
+    <input type="checkbox" id="Heavy_Splatling_Deco" value="Heavy_Splatling_Deco" name="splatling" class="chk_main" checked=""><label for="Heavy_Splatling_Deco">Heavy Splatling Remix</label><br>
+    <input type="checkbox" id="Hydra_Splatling" value="Hydra_Splatling" name="splatling" class="chk_main" checked=""><label for="Hydra_Splatling">Hydra Splatling</label><br>
+    <input type="checkbox" id="Custom_Hydra_Splatling" value="Custom_Hydra_Splatling" name="splatling" class="chk_main" checked=""><label for="Custom_Hydra_Splatling">Custom Hydra Splatling</label><br>
+    <input type="checkbox" id="Ballpoint_Splatling" value="Ballpoint_Splatling" name="splatling" class="chk_main" checked=""><label for="Ballpoint_Splatling">Ballpoint Splatling</label><br>
+    <input type="checkbox" id="Ballpoint_Splatling_Nouveau" value="Ballpoint_Splatling_Nouveau" name="splatling" class="chk_main" checked=""><label for="Ballpoint_Splatling_Nouveau">Ballpoint Splatling Nouveau</label><br>
+    <input type="checkbox" id="Nautilus_47" value="Nautilus_47" name="splatling" class="chk_main" checked=""><label for="Nautilus_47">Nautilus 47</label><br>
+    <input type="checkbox" id="Nautilus_79" value="Nautilus_79" name="splatling" class="chk_main" checked=""><label for="Nautilus_79">Nautilus 79</label><br>
+    <hr>
+
+    <input type="checkbox" id="dualies_class" value="dualies" name="weapon_class" checked=""><label for="dualies_class" class="h5">Dualies</label><br>
+    <input type="checkbox" id="Dapple_Dualies" value="Dapple_Dualies" name="dualies" class="chk_main" checked=""><label for="Dapple_Dualies">Dapple Dualies</label><br>
+    <input type="checkbox" id="Dapple_Dualies_Nouveau" value="Dapple_Dualies_Nouveau" name="dualies" class="chk_main" checked=""><label for="Dapple_Dualies_Nouveau">Dapple Dualies Nouveau</label><br>
+    <input type="checkbox" id="Clear_Dapple_Dualies" value="Clear_Dapple_Dualies" name="dualies" class="chk_main" checked=""><label for="Clear_Dapple_Dualies">Clear Dapple Dualies</label><br>
+    <input type="checkbox" id="Splat_Dualies" value="Splat_Dualies" name="dualies" class="chk_main" checked=""><label for="Splat_Dualies">Splat Dualies</label><br>
+    <input type="checkbox" id="Enperry_Splat_Dualies" value="Enperry_Splat_Dualies" name="dualies" class="chk_main" checked=""><label for="Enperry_Splat_Dualies">Enperry Splat Dualies</label><br>
+    <input type="checkbox" id="Kensa_Splat_Dualies" value="Kensa_Splat_Dualies" name="dualies" class="chk_main" checked=""><label for="Kensa_Splat_Dualies">Kensa Splat Dualies</label><br>
+    <input type="checkbox" id="Glooga_Dualies" value="Glooga_Dualies" name="dualies" class="chk_main" checked=""><label for="Glooga_Dualies">Glooga Dualies</label><br>
+    <input type="checkbox" id="Glooga_Dualies_Deco" value="Glooga_Dualies_Deco" name="dualies" class="chk_main" checked=""><label for="Glooga_Dualies_Deco">Glooga Dualies Deco</label><br>
+    <input type="checkbox" id="Kensa_Glooga_Dualies" value="Kensa_Glooga_Dualies" name="dualies" class="chk_main" checked=""><label for="Kensa_Glooga_Dualies">Kensa Glooga Dualies</label><br>
+    <input type="checkbox" id="Dualie_Squelchers" value="Dualie_Squelchers" name="dualies" class="chk_main" checked=""><label for="Dualie_Squelchers">Dualie Squelchers</label><br>
+    <input type="checkbox" id="Custom_Dualie_Squelchers" value="Custom_Dualie_Squelchers" name="dualies" class="chk_main" checked=""><label for="Custom_Dualie_Squelchers">Custom Dualie Squelchers</label><br>
+    <input type="checkbox" id="Dark_Tetra_Dualies" value="Dark_Tetra_Dualies" name="dualies" class="chk_main" checked=""><label for="Dark_Tetra_Dualies">Dark Tetra Dualies</label><br>
+    <input type="checkbox" id="Light_Tetra_Dualies" value="Light_Tetra_Dualies" name="dualies" class="chk_main" checked=""><label for="Light_Tetra_Dualies">Light Tetra Dualies</label><br>
+    <hr>
+
+    <input type="checkbox" id="brella_class" value="brella" name="weapon_class" checked=""><label for="brella_class" class="h5">Brellas</label><br>
+    <input type="checkbox" id="Splat_Brella" value="Splat_Brella" name="brella" class="chk_main" checked=""><label for="Splat_Brella">Splat Brella</label><br>
+    <input type="checkbox" id="Sorella_Brella" value="Sorella_Brella" name="brella" class="chk_main" checked=""><label for="Sorella_Brella">Sorella Brella</label><br>
+    <input type="checkbox" id="Tenta_Brella" value="Tenta_Brella" name="brella" class="chk_main" checked=""><label for="Tenta_Brella">Tenta Brella</label><br>
+    <input type="checkbox" id="Tenta_Sorella_Brella" value="Tenta_Sorella_Brella" name="brella" class="chk_main" checked=""><label for="Tenta_Sorella_Brella">Tenta Sorella Brella</label><br>
+    <input type="checkbox" id="Tenta_Camo_Brella" value="Tenta_Camo_Brella" name="brella" class="chk_main" checked=""><label for="Tenta_Camo_Brella">Tenta Camo Brella</label><br>
+    <input type="checkbox" id="Undercover_Brella" value="Undercover_Brella" name="brella" class="chk_main" checked=""><label for="Undercover_Brella">Undercover Brella</label><br>
+    <input type="checkbox" id="Undercover_Sorella_Brella" value="Undercover_Sorella_Brella" name="brella" class="chk_main" checked=""><label for="Undercover_Sorella_Brella">Undercover Sorella Brella</label><br>
+    <input type="checkbox" id="Kensa_Undercover_Brella" value="Kensa_Undercover_Brella" name="brella" class="chk_main" checked=""><label for="Kensa_Undercover_Brella">Kensa Undercover Brella</label><br>
+
+  </div>
+</body>
+</html>
