@@ -74,14 +74,14 @@ const maindata = {
     "sub":"point_sensor",
     "special":"baller",
     "class":"shooter",
-    "img":".52_Gal.png"
+    "img":"52_Gal.png"
   },
   "96_Gal":{
     "name":".96 Gal",
     "sub":"sprinkler",
     "special":"ink_armor",
     "class":"shooter",
-    "img":".96_Gal.png"
+    "img":"96_Gal.png"
   },
   "Aerospray_MG":{
     "name":"Aerospray MG",
@@ -354,14 +354,14 @@ const maindata = {
     "sub":"curling_bomb",
     "special":"sting_ray",
     "class":"shooter",
-    "img":".52_Gal_Deco.png"
+    "img":"52_Gal_Deco.png"
   },
   "96_Gal_deco":{
     "name":".96 Gal Deco",
     "sub":"splash_wall",
     "special":"splashdown",
     "class":"shooter",
-    "img":".96_Gal_deco.png"
+    "img":"96_Gal_deco.png"
   },
   "Aerospray_PG":{
     "name":"Aerospray PG",
@@ -613,7 +613,7 @@ const maindata = {
     "sub":"splash_wall",
     "special":"booyah_bomb",
     "class":"shooter",
-    "img":"Kensa_.52_Gal.png"
+    "img":"Kensa_52_Gal.png"
   },
   "Kensa_Charger":{
     "name":"Kensa Charger",
