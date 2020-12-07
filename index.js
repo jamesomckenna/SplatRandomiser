@@ -76,12 +76,12 @@ window.onload=function(){
       openmenu = false;
       btnMenu.innerHTML = "<i class=\"fas fa-arrow-right\"></i>";
       document.getElementById("side_nav").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("btn_menu").style.marginLeft = "0";
     } else {
       openmenu = true;
       btnMenu.innerHTML = "<i class=\"fas fa-arrow-left\"></i>";
       document.getElementById("side_nav").style.width = "300px";
-      document.getElementById("main").style.marginLeft = "300px";
+      document.getElementById("btn_menu").style.marginLeft = "300px";
     }
   });
 
