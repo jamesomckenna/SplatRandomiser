@@ -286,13 +286,6 @@ const maindata = {
     "class":"blaster",
     "img":"Rapid_Blaster_Pro.png"
   },
-  "Rapid_Blaster_Pro":{
-    "name":"Sloshing Machine",
-    "sub":"autobomb",
-    "special":"sting_ray",
-    "class":"slosher",
-    "img":"Rapid_Blaster_Pro.png"
-  },
   "Splash-o-matic":{
     "name":"Splash-o-matic",
     "sub":"toxic_mist",
@@ -361,7 +354,7 @@ const maindata = {
     "sub":"splash_wall",
     "special":"splashdown",
     "class":"shooter",
-    "img":"96_Gal_deco.png"
+    "img":"96_Gal_Deco.png"
   },
   "Aerospray_PG":{
     "name":"Aerospray PG",
