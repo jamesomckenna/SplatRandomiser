@@ -1,4 +1,5 @@
-const mainlist = [
+// array of weapon references in the game
+const mainList = [
   "52_Gal",
   "52_Gal_Deco",
   "96_Gal",

@@ -1,4 +1,5 @@
-const speciallist = {
+// list of special weapon names and icons in the game
+const specialList = {
   "autobomb_launcher": {
     "name": "Splat Bomb",
     "img": "Autobomb_Launcher.png"

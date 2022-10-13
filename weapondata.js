@@ -1,4 +1,5 @@
-const maindata = {
+// list of weapon names, icons and kits in the game
+const mainData = {
   "Splattershot_Jr": {
     "name":"Splattershot Jr.",
     "sub":"splat_bomb",

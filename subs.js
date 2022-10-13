@@ -1,4 +1,5 @@
-const sublist = {
+// list of sub weapon names and icons in the game
+const subList = {
   "splat_bomb": {
     "name": "Splat Bomb",
     "img": "Splat_Bomb.png"

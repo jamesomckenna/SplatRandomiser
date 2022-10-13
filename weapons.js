@@ -1,4 +1,4 @@
-var mainlist = [
+var mainList = [
   {
     "name":"Splattershot Jr.",
     "sub":"splat_bomb",
